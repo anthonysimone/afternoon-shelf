@@ -212,6 +212,3 @@ ul.primary {
   @include bg-style(contain);
 }
 
-body {
-  @include gradient(_base);
-}
