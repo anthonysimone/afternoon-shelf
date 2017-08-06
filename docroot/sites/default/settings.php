@@ -79,10 +79,8 @@ $settings['install_profile'] = 'standard';
 // and any additional version thereof.
 // Additional env specific patterns can be added in the following files (drupalvm, local)
 $settings['trusted_host_patterns'] = array(
-  '^e3develop\.com$',
-  '^.+\.e3develop\.com$',
-  '^e3staging\.com$',
-  '^.+\.e3staging\.com$',
+  '^organyzr\.com$',
+  '^.+\.organyzr\.com$',
 );
 
 // Set default paths to public, private and temp directories.
@@ -102,25 +100,21 @@ $config['system.logging']['error_level'] = 'all';
 // Set Google Analytics to NULL, override this for production environment.
 $config['google_analytics.settings']['account'] = '';
 
-// If $_ENV['AH_SITE_ENVIRONMENT'], load Acquia settings.
-if(isset($_ENV['AH_SITE_ENVIRONMENT'])) {
-  if (file_exists(__DIR__ . '/settings.acquia.php')) {
-    include __DIR__ . '/settings.acquia.php';
 
+
+// Initialize Dotenv with relative path to project root if .env file exists
+if (file_exists(__DIR__ . '/../../../.env')) {
+  $dotenv = new Dotenv\Dotenv(__DIR__ . '/../../..');
+  $dotenv->load();
+}
+
+// If $_ENV['FORGE_SITE_ENVIRONMENT'], load Acquia settings.
+if(getenv('FORGE_SITE_ENVIRONMENT'))  {
+  if (file_exists(__DIR__ . '/settings.forge.php')) {
+    include __DIR__ . '/settings.forge.php';
   }
 }
-// If $_SERVER['AH_SITE_ENVIRONMENT'], load Blackmesh settings.
-elseif(isset($_SERVER['AH_SITE_ENVIRONMENT'])) {
-  if (file_exists(__DIR__ . '/settings.blackmesh.php')) {
-    include __DIR__ . '/settings.blackmesh.php';
-  }
-}
-// If drupal-vm settings exist, load them.
+// Else, load drupal-vm settings if they exist.
 elseif (file_exists(__DIR__ . '/settings.drupalvm.php')) {
   include __DIR__ . '/settings.drupalvm.php';
-}
-
-// If local settings file exists, load it.
-if(file_exists(__DIR__ . '/settings.local.php')) {
-  include __DIR__ . '/settings.local.php';
 }
