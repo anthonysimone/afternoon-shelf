@@ -1,18 +1,16 @@
-uuid: e52a283e-12d3-45c6-85f8-462739e1ae6a
+uuid: d09718b3-812a-425b-a323-6167806be085
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.page
+    - node.type.resource
   module:
     - text
-_core:
-  default_config_hash: rUop-8b6hvxxDYbv-KobTfNIBNbPY9qOPl8f6kBNSpw
-id: node.page.body
+id: node.resource.body
 field_name: body
 entity_type: node
-bundle: page
+bundle: resource
 label: Body
 description: ''
 required: false

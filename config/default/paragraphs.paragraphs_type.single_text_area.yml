@@ -1,7 +1,0 @@
-uuid: be333470-bb9b-479e-a148-6c6c6eaa3fce
-langcode: en
-status: true
-dependencies: {  }
-id: single_text_area
-label: 'Single - Text Area'
-behavior_plugins: {  }

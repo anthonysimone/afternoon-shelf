@@ -1,0 +1,17 @@
+uuid: a95d1d2b-9d8d-4cdc-b9a0-208b6d6a0c48
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Resource
+type: resource
+description: 'This content type contains all of the resource bits.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

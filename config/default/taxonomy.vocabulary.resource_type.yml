@@ -1,0 +1,9 @@
+uuid: 4ad01439-95a7-4034-8d3b-73b04a165f91
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Type'
+vid: resource_type
+description: 'This gives you all of the types of bits.'
+hierarchy: 0
+weight: 0

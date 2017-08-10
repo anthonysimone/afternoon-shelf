@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.landing_page.field_content
-    - field.field.node.landing_page.field_header
     - node.type.landing_page
   module:
     - user
@@ -18,6 +16,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_content: true
-  field_header: true
   langcode: true

@@ -1,19 +1,17 @@
-uuid: adabd760-6851-4e8c-a63d-2bde1c736efa
+uuid: 247bf6d7-1c63-464b-89b9-dfcc7aa634bb
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.page
-_core:
-  default_config_hash: fPUEnm4T5zfZRr3ttDUqq7yCDd2uW3clWD-pvos4tlQ
-id: node.page.promote
+    - node.type.resource
+id: node.resource.promote
 field_name: promote
 entity_type: node
-bundle: page
+bundle: resource
 label: 'Promoted to front page'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0

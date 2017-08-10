@@ -1,16 +1,16 @@
-uuid: 6c2ebba8-62a7-48ad-92be-53341808d66d
+uuid: 1648db72-3079-4563-be61-699be64c7c84
 langcode: en
 status: true
 dependencies:
   module:
-    - media_entity
-    - paragraphs
-id: paragraph.field_svg
-field_name: field_svg
-entity_type: paragraph
+    - node
+    - taxonomy
+id: node.field_resource_type
+field_name: field_resource_type
+entity_type: node
 type: entity_reference
 settings:
-  target_type: media
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1
