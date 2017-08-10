@@ -33,7 +33,6 @@
     "drupal/admin_toolbar": "^1.0",
     "drupal/adminimal_theme": "^1.0",
     "drupal/adminimal_admin_toolbar": "^1.0",
-    "drupal/acquia_connector": "^1.0",
     "drupal/config_readonly": "^1.0",
     "drupal/config_update": "^1.0",
     "drupal/contact_storage": "^1.0",
