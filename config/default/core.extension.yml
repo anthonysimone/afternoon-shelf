@@ -14,6 +14,7 @@ module:
   ckeditor: 0
   coffee: 0
   color: 0
+  comment: 0
   config: 0
   config_update: 0
   config_update_ui: 0
@@ -37,6 +38,7 @@ module:
   entity_embed: 0
   entity_reference_revisions: 0
   environment_indicator: 0
+  facets: 0
   field: 0
   field_group: 0
   field_hidden: 0
@@ -79,6 +81,7 @@ module:
   search: 0
   search_api: 0
   search_api_solr: 0
+  search_api_views_taxonomy: 0
   seckit: 0
   security_review: 0
   serialization: 0

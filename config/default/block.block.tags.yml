@@ -1,0 +1,28 @@
+uuid: d879bd19-5d52-4475-a5fe-9fda3df779bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.tags
+  module:
+    - facets
+    - system
+  theme:
+    - themekit
+id: tags
+theme: themekit
+region: content
+weight: -7
+provider: null
+plugin: 'facet_block:tags'
+settings:
+  id: 'facet_block:tags'
+  label: Tags
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /resources
+    negate: false
+    context_mapping: {  }

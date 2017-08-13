@@ -1,0 +1,28 @@
+uuid: 65fa9d13-caa6-4542-8cc1-4a7fcec9f237
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.resource_type
+  module:
+    - facets
+    - system
+  theme:
+    - themekit
+id: resourcetype
+theme: themekit
+region: content
+weight: -6
+provider: null
+plugin: 'facet_block:resource_type'
+settings:
+  id: 'facet_block:resource_type'
+  label: 'Resource Type'
+  provider: facets
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /resources
+    negate: false
+    context_mapping: {  }
